@@ -163,39 +163,6 @@
         </div>
       </div>
     </section>
-
-    <section id="calibrationPage" class="page">
-      <div class="panel">
-        <h2>Motor Calibration</h2>
-        <p class="muted">If the rover bends to one side, adjust left and right speed until it moves straight.</p>
-
-        <div class="slider-grid">
-          <label>
-            Left speed
-            <input id="leftSpeed" type="range" min="0" max="255" value="170">
-            <span id="leftSpeedValue">170</span>
-          </label>
-          <label>
-            Right speed
-            <input id="rightSpeed" type="range" min="0" max="255" value="120">
-            <span id="rightSpeedValue">120</span>
-          </label>
-          <label>
-            Turn speed
-            <input id="turnSpeed" type="range" min="0" max="255" value="90">
-            <span id="turnSpeedValue">90</span>
-          </label>
-        </div>
-
-        <div class="actions">
-          <button id="saveSpeedBtn" class="primary">Apply Calibration</button>
-          <button data-command="/forward?ms=900">Test Straight</button>
-          <button data-command="/left?ms=150">Test Left</button>
-          <button data-command="/right?ms=150">Test Right</button>
-        </div>
-      </div>
-    </section>
-
     <section class="panel log-panel">
       <div class="section-head">
         <h2>Activity Log</h2>
